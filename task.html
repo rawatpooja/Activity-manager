@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="activity.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+  </head>
+<body>
+    <div class="sidebar" id="mysidebar">
+            <a href="#" class="closebtn" id="closebtn">X</a>
+            <a href="activity.html">Home</a>
+            <a href="task.html">your task</a>
+            <a href="show.html">all data</a>
+            <a href="calender.html">celender</a>
+    </div>
+     <div id="main">
+            <button class="openbtn"><i class="fas fa-bars"></i></button>
+     </div>
+<form action="show.html">
+  <form action="event-tests.html">
+      <div style="border: 2px black solid">
+      <div style="width: 60% ;margin: auto ;padding: 20px;">
+        <label for="task">Task</label>
+        <input type="text" id="task_name" name="task"/><br><br>
+        <label for="taskstatus">Status</label>
+        <select id="sta">
+             <option>Select</option>
+             <option>Start</option>
+             <option>In-progress</option>
+             <option>Done</option>
+        </select><br><br>
+        <label for="priority">Priority</label>
+        <select id="pri">
+            <option>Select</option>
+            <option>High</option>
+            <option>Medium</option>
+            <option>Low</option>
+       </select><br><br>
+        <label for="celender">celender</label>
+        <input type="date" id="cel" name="celender"  /><br /><br />
+        <button type="button" id="save">Save</button>
+        <button type="button"  id="show_data">show data</button>
+        <button type="button" id="update">Update</button>
+ </form>
+ </form>
+ <table>
+      <thead>
+            <tr>
+               <th>Task</th>
+               <th>Status</th>
+               <th>Priority</th>
+               <th>celender</th>
+            </tr>
+       </thead>
+       <tbody id="myTable"></tbody>
+ </table>
+       </div>
+       </div>
+ <script src="task.js">
+
+
+</script>
+  </body>
+</html>
